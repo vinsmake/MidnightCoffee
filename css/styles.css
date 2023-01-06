@@ -1,0 +1,123 @@
+
+/* --START--GOOGLE FONTS IMPORT-- */
+/* Amatic SC: https://fonts.google.com/specimen/Amatic+SC */
+/* Source Sans Pro: https://fonts.google.com/specimen/Source+Sans+Pro */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200;6..72,400&display=swap');
+/* CSS rules to specify families:
+font-family: 'Newsreader', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+/* --END--GOOGLE FONTS IMPORT-- */
+:root {
+    --coffee: #7B5F3F;
+    --capuccino: #F7E9D4;
+    --ashes: #262225;
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #D9D9D9;
+
+    --titles: 'Newsreader', serif;
+    --text: 'Source Sans Pro', sans-serif;
+
+}
+
+/* --START--BOX-SIZING AND REM CONFIG-- */
+html {
+    font-size: 125%; /* 1rem=20px */
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@media (max-width: 920px) {
+    html {
+        font-size: 112.5%; /* 1rem=18px */
+        }
+}
+
+@media (max-width: 480px) {
+    html {
+    font-size: 100%; /* 1rem=16px */
+    }
+}
+/* --END--BOX-SIZING AND REM CONFIG-- */
+
+.body {
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--ashes);
+    font-family: var(--text);
+}
+/* --START--HEADER-- */
+.header {
+    background-image: url(../images/banner.jpg);
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-position: 0% 15%; /* left 0% top 15% */
+    width: 100%;
+    background-size: cover;
+}
+/* --START--HEADER__NAV-- */
+.header__nav { /* Contains two columns, one for logo and one for nav-links */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 920px) {
+    .header__nav {
+        flex-direction:column;
+    }
+}
+
+.header__nav--logo { /* Left column - logo */
+    color: white;
+    text-decoration: none;
+}
+
+.header__nav--text {
+    font-size: 4rem;
+    font-family: var(--titles);
+    font-weight: lighter;
+    margin: 0;
+}
+
+@media (max-width: 920px) {
+    .header__nav--text {
+        font-size: 3rem;
+    }
+}
+
+
+
+.header__nav--span{
+    color: var(--coffee);
+    font-weight: normal;
+}
+
+.header__nav__navegation { /* Right column - logo */
+
+}
+.header__nav__navegation--link {
+
+}
+/* --END--HEADER__NAV-- */
+/* --START--HEADER__BANNER-- */
+.header__text {
+    text-align: center;
+    margin: 0;
+}
+
+.header__text--slogan {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+.header__text--legend {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+/* --END--HEADER__BANNER-- */
