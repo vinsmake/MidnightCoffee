@@ -11,8 +11,9 @@ font-family: 'Source Sans Pro', sans-serif; */
 :root {
     --coffee: #7B5F3F;
     --capuccino: #F7E9D4;
-    --ashes: #262225;
-    --black: #000000;
+    --ashes: #292929;
+    --black: #1b1b1b;
+    --light: #484848;
     --white: #ffffff;
     --gray: #D9D9D9;
 
@@ -47,7 +48,7 @@ html {
 .body {
     font-size: 1rem;
     color: var(--white);
-    background-color: var(--ashes);
+    background-color: var(--black);
     font-family: var(--text);
 }
 /* --START--HEADER-- */
@@ -64,6 +65,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 1rem;
 }
 
 @media (max-width: 920px) {
@@ -75,6 +77,13 @@ html {
 .header__nav--logo { /* Left column - logo */
     color: white;
     text-decoration: none;
+    margin-left: 5rem;
+}
+
+@media (max-width: 1440px) { /* for better ux design in laptop */
+    .header__nav--logo { 
+        margin-left: 0.5rem;
+    }
 }
 
 .header__nav--text {
@@ -97,17 +106,43 @@ html {
     font-weight: normal;
 }
 
-.header__nav__navegation { /* Right column - logo */
-
+.header__nav__navegation { /* Right column - nav */
+    margin-right: 5rem;
 }
+
+@media (max-width: 1440px) {
+    .header__nav__navegation { /* Right column - nav */
+        margin-right: 0.5rem;
+    }
+}
+@media (max-width: 920px) {
+    .header__nav__navegation { /* Right column - nav */
+        margin: 1rem 0rem 0rem 0rem;
+    }
+}
+
 .header__nav__navegation--link {
-
+    color: var(--white);
+    padding: 0 1rem;
+    text-decoration: none;
+    font-size: 1rem;
 }
+
+
+@media (max-width: 1440px) { /* To see on laptop */
+    .header__nav__navegation--link {
+        padding: 0 0.5rem;
+    }
+}
+
 /* --END--HEADER__NAV-- */
 /* --START--HEADER__BANNER-- */
 .header__text {
     text-align: center;
     margin: 0;
+    text-shadow: 0px 0px 5px rgb(0 0 0 / 100%), /* Makes the text more easy to read */
+                2px 2px 5px rgb(0 0 0 / 100%),
+                0px 0px 5px rgb(0 0 0 / 100%);
 }
 
 .header__text--slogan {
@@ -121,3 +156,53 @@ html {
     font-size: 1.5rem;
 }
 /* --END--HEADER__BANNER-- */
+/* --START--BLOG-- */
+.blog { /* two columns, one for blog and one for courses */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 80%;
+    margin: 1rem auto;
+    gap: 2rem;
+}
+
+@media (max-width: 920px) {
+    .blog {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+}
+.blog__content, /* left column (our blog) */
+.blog__courses { /* light column (out courses) */
+/*     background-color: var(--light); */ /* Just to develop easier ///////////////////////////////////////// */
+    padding: 1rem;
+}
+@media (max-width: 920px) {
+    .blog__courses {
+        grid-row: 1 / 1;
+    }
+}
+/* --START--BLOG__CONTENT-- */
+.blog__article {
+    background-color: var(--ashes);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+
+.blog__article__img--src {
+    width: 100%;
+}
+.blog__article__info--title {
+    font-size: 2rem;
+}
+
+.blog__article__info--legend {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+/* --END--BLOG__CONTENT-- */
+/* --START--BLOG__COURSES-- */
+
+/* --END--BLOG__COURSES-- */
+/* --END--BLOG-- */
