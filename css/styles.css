@@ -187,13 +187,13 @@ a { /* a dash-line and color reset */
 }
 
 @media (max-width: 920px) {
-    .blog__courses {
+    .blog__recipes {
         grid-row: 1 / 1;
     }
 }
 
 .blog__article,
-.blog__course {
+.blog__recipe {
     background-color: var(--ashes);
     padding: 1rem;
     border-radius: 8px;
@@ -201,7 +201,7 @@ a { /* a dash-line and color reset */
 }
 /* --START--BLOG__ARTICLES-- */
 
-.blog__article__img--src {
+.blog__article--img {
     width: 100%;
 }
 .blog__article__info--title {
@@ -213,7 +213,35 @@ a { /* a dash-line and color reset */
     font-weight: lighter;
 }
 /* --END--BLOG__ARTICLES-- */
-/* --START--BLOG__COURSES-- */
+/* --START--BLOG__RECIPES-- */
+.blog__recipe {
 
-/* --END--BLOG__COURSES-- */
+}
+
+.blog__recipe--title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.blog__recipe--img {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.blog__recipe--legend {
+    font-weight: lighter;
+}
+
+.blog__recipe--button {
+    background-color: var(--light);
+    color: var(--white);
+    display: flex;
+    margin: 0rem 0rem 0rem auto;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; 
+}
+/* --END--BLOG__RECIPES-- */
 /* --END--BLOG-- */
