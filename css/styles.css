@@ -43,14 +43,21 @@ html {
     font-size: 100%; /* 1rem=16px */
     }
 }
-/* --END--BOX-SIZING AND REM CONFIG-- */
 
-.body {
+/* --END--BOX-SIZING AND REM CONFIG-- */
+/* --START--UNIVERSAL--CONFIG-- */
+body {
     font-size: 1rem;
     color: var(--white);
     background-color: var(--black);
     font-family: var(--text);
 }
+a { /* a dash-line and color reset */
+    text-decoration: none;
+    color: var(--white);
+}
+/* --END--UNIVERSAL--CONFIG-- */
+
 /* --START--HEADER-- */
 .header {
     background-image: url(../images/banner.jpg);
@@ -184,14 +191,15 @@ html {
         grid-row: 1 / 1;
     }
 }
-/* --START--BLOG__CONTENT-- */
-.blog__article {
+
+.blog__article,
+.blog__course {
     background-color: var(--ashes);
     padding: 1rem;
     border-radius: 8px;
+    margin-bottom: 1rem;
 }
-
-
+/* --START--BLOG__ARTICLES-- */
 
 .blog__article__img--src {
     width: 100%;
@@ -204,7 +212,7 @@ html {
     font-size: 1.5rem;
     font-weight: lighter;
 }
-/* --END--BLOG__CONTENT-- */
+/* --END--BLOG__ARTICLES-- */
 /* --START--BLOG__COURSES-- */
 
 /* --END--BLOG__COURSES-- */
