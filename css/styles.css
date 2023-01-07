@@ -9,14 +9,12 @@ font-family: 'Newsreader', serif;
 font-family: 'Source Sans Pro', sans-serif; */
 /* --END--GOOGLE FONTS IMPORT-- */
 :root {
-    --coffee: #7B5F3F;
-    --capuccino: #F7E9D4;
-    --ashes: #292929;
     --black: #1b1b1b;
+    --midnight: #112229;
+    --ashes: #292929;
     --light: #484848;
     --white: #ffffff;
-    --gray: #D9D9D9;
-    --blue: #112229;
+    --coffee: #7B5F3F;
 
     --titles: 'Newsreader', serif;
     --text: 'Source Sans Pro', sans-serif;
@@ -179,7 +177,7 @@ a { /* a dash-line and color reset */
 /* --END--HEADER__BANNER-- */
 /* --START--FOOTER-- */
 .footer {
-    background-color: var(--blue);
+    background-color: var(--midnight);
 }
 /* --START--BLOG-- */
 .blog { /* two columns, one for blog and one for courses */
@@ -262,3 +260,94 @@ a { /* a dash-line and color reset */
 }
 /* --END--BLOG__RECIPES-- */
 /* --END--BLOG-- */
+
+/* --START--ABOUT-- */
+.about { /* two columns, one for blog and one for courses */
+    width: min(95%, 80rem); /* if 95% of the screen is <80rem, uses it, else, use 80rem */
+    margin: 1rem auto;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.about__me {
+    width: min(100%, 50rem);
+    margin: 3rem auto;
+}
+
+.about__me--name,
+.about__colors--title {
+    font-family: var(--titles);
+    font-weight: 200;
+    font-size: 4rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.about__me--info {
+    margin: 0;
+}
+.about__colors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    margin: auto;
+}
+
+@media (max-width: 920px) {
+    .about__colors {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+}
+/* --START--COLORS__COLORS-- */
+.about__colors--colors {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+}
+.about__colors--colors>* {
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    border: 2px solid var(--ashes);
+}
+.about__colors--color:nth-child(1) {
+    background-color: var(--black);
+}
+.about__colors--color:nth-child(2) {
+    background-color: var(--midnight);
+}
+.about__colors--color:nth-child(3) {
+    background-color: var(--ashes);
+}
+
+.about__colors--color:nth-child(4) {
+    background-color: var(--light);
+}
+
+.about__colors--color:nth-child(5) {
+    background-color: var(--coffee);
+}
+
+.about__colors--color:nth-child(6) {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.about__colors__text {
+    padding: 0 1rem;
+    margin: 0 auto;
+
+}
+
+.about__colors__text--legend {
+
+}
+.about__colors__text--link {
+    color: var(--coffee);
+}
+.about__fonts {
+
+}
