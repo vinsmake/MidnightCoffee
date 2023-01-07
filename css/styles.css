@@ -279,13 +279,14 @@ a { /* a dash-line and color reset */
 .about__colors--title {
     font-family: var(--titles);
     font-weight: 200;
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem 0;
     text-align: center;
 }
 
 .about__me--info {
     margin: 0;
+    padding: 1rem;
 }
 .about__colors {
     display: grid;
