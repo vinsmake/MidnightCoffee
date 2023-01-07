@@ -16,6 +16,7 @@ font-family: 'Source Sans Pro', sans-serif; */
     --light: #484848;
     --white: #ffffff;
     --gray: #D9D9D9;
+    --blue: #112229;
 
     --titles: 'Newsreader', serif;
     --text: 'Source Sans Pro', sans-serif;
@@ -66,6 +67,12 @@ a { /* a dash-line and color reset */
     background-position: 0% 15%; /* left 0% top 15% */
     width: 100%;
     background-size: cover;
+}
+
+@media (max-width: 920px) {
+    .header {
+    height: 15rem;
+    }
 }
 /* --START--HEADER__NAV-- */
 .header__nav { /* Contains two columns, one for logo and one for nav-links */
@@ -170,11 +177,15 @@ a { /* a dash-line and color reset */
     font-size: 1.5rem;
 }
 /* --END--HEADER__BANNER-- */
+/* --START--FOOTER-- */
+.footer {
+    background-color: var(--blue);
+}
 /* --START--BLOG-- */
 .blog { /* two columns, one for blog and one for courses */
     display: grid;
     grid-template-columns: 2fr 1fr;
-    width: 80%;
+    width: min(95%, 80rem); /* if 95% of the screen is <80rem, uses it, else, use 80rem */
     margin: 1rem auto;
     gap: 3rem;
 }
@@ -182,7 +193,7 @@ a { /* a dash-line and color reset */
 @media (max-width: 920px) {
     .blog {
         grid-template-columns: 1fr;
-        width: 95%;
+
     }
 }
 
