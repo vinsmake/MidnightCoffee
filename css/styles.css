@@ -1,6 +1,6 @@
 
 /* --START--GOOGLE FONTS IMPORT-- */
-/* Amatic SC: https://fonts.google.com/specimen/Amatic+SC */
+/* Newsreader: https://fonts.google.com/specimen/Newsreader?query=Newsreader */
 /* Source Sans Pro: https://fonts.google.com/specimen/Source+Sans+Pro */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200;6..72,400&display=swap');
@@ -200,7 +200,10 @@ a { /* a dash-line and color reset */
         grid-row: 1 / 1;
     }
 }
-
+.blog--title {
+    font-family: var(--titles);
+    font-weight: 400;
+}
 .blog__article,
 .blog__recipe {
     background-color: var(--ashes);
@@ -288,6 +291,9 @@ a { /* a dash-line and color reset */
     margin: 0;
     padding: 1rem;
 }
+
+/* --START--COLORS-- */
+
 .about__colors {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -346,9 +352,59 @@ a { /* a dash-line and color reset */
 .about__colors__text--legend {
 
 }
-.about__colors__text--link {
+.about__colors__text--link,
+.about__fonts__text--link,
+.about__fonts__text--link--newspaper,
+.about__fonts__text--link--source {
     color: var(--coffee);
 }
-.about__fonts {
+/* --END--COLORS__COLORS-- */
+/* --END--COLORS-- */
 
+.about__fonts {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 920px) {
+    .about__fonts {
+        grid-template-columns: 1fr;
+    }
+}
+
+.about__fonts__text--titles--example {
+    font-size: 3rem;
+    font-family: var(--titles);
+    margin: 0 auto;
+    text-align: center;
+}
+.about__fonts__text--titles--example span {
+    color: var(--coffee);
+    font-weight: 400;
+}
+
+.about__fonts__text--source--example {
+    text-align: center;
+}
+
+.about__fonts__text--gestalt--example {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.about__fonts__text--gestalt--example span {
+    font-weight: 200;
+    font-size: 1rem;
+}
+.about__fonts__text--link--newspaper {
+    font-family: var(--titles);
+    font-weight: 400;
+
+}
+
+.about__fonts__text--link--source {
+    font-family: var(--text);
+    font-weight: 400;
 }
