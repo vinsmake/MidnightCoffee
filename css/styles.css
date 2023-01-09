@@ -223,8 +223,8 @@ a { /* a dash-line and color reset */
 }
 
 .blog__article__info--legend {
-    font-size: 1.5rem;
-
+    font-size: 1.2rem;
+    text-align: justify;
 }
 /* --END--BLOG__ARTICLES-- */
 /* --START--BLOG__RECIPES-- */
@@ -245,11 +245,12 @@ a { /* a dash-line and color reset */
 
 .blog__recipe--legend {
     font-weight: lighter;
+    text-align: justify;
 }
 
 @media (max-width: 920px) {
     .blog__recipe--legend {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     }
 }
 
