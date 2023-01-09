@@ -50,6 +50,7 @@ body {
     color: var(--white);
     background-color: var(--black);
     font-family: var(--text);
+    font-weight: 200;
 }
 a { /* a dash-line and color reset */
     text-decoration: none;
@@ -210,6 +211,7 @@ a { /* a dash-line and color reset */
     padding: 1rem;
     border-radius: 8px;
     margin-bottom: 1rem;
+
 }
 /* --START--BLOG__ARTICLES-- */
 
@@ -222,7 +224,7 @@ a { /* a dash-line and color reset */
 
 .blog__article__info--legend {
     font-size: 1.5rem;
-    font-weight: lighter;
+
 }
 /* --END--BLOG__ARTICLES-- */
 /* --START--BLOG__RECIPES-- */
@@ -270,7 +272,6 @@ a { /* a dash-line and color reset */
     margin: 1rem auto;
     text-align: justify;
     font-size: 1.5rem;
-    font-weight: 200;
 }
 
 .about__me {
@@ -351,7 +352,7 @@ a { /* a dash-line and color reset */
 }
 /* --END--COLORS__COLORS-- */
 /* --END--COLORS-- */
-
+/* --START--FONTS-- */
 .about__fonts {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -414,4 +415,44 @@ a { /* a dash-line and color reset */
     .about__fonts__text--source { 
         border-bottom: none;
     }
+}
+
+/* --END--FONTS-- */
+/* --START--RECIPES-- */
+/* --END--RECIPES-- */
+
+.recipe {
+    width: min(97%, 70rem); /* if 95% of the screen is <80rem, uses it, else, use 80rem */
+    margin: 1rem auto;
+    background-color: var(--ashes);
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(--light);
+    font-size: 1.3rem;
+}
+.recipe__container {
+    width: min(95%, 45rem);
+    margin: 1rem auto;
+}
+.recipe--title {
+    font-size: 4rem;
+    font-family: var(--titles);
+    font-weight: 200;
+    margin: 1rem auto 0 auto;
+}
+
+.recipe--legend {
+    font-family: var(--titles);
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 0 auto 1rem auto;
+}
+
+.recipe--image {
+    width: min(100%, 30rem); /* if 95% of the container is <30rem, uses it, else, use 80rem */
+}
+
+.recipe--description {
+    text-align: justify;
 }
