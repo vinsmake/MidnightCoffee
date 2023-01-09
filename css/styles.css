@@ -420,7 +420,7 @@ a { /* a dash-line and color reset */
 
 /* --END--FONTS-- */
 /* --START--RECIPES-- */
-/* --END--RECIPES-- */
+
 
 .recipe {
     width: min(97%, 70rem); /* if 95% of the screen is <80rem, uses it, else, use 80rem */
@@ -456,4 +456,53 @@ a { /* a dash-line and color reset */
 
 .recipe--description {
     text-align: justify;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--light);
 }
+.recipe__info {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    text-align: left;
+    gap: 2rem;
+}
+
+@media (max-width: 920px) {
+    .recipe__info {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: left;
+        gap: 2rem;
+    }
+}
+
+.recipe__ingredients {
+    padding-right: 0.5rem;
+    border-right: 2px solid var(--light);
+}
+
+@media (max-width: 920px) {
+    .recipe__ingredients {
+    border-right: none;
+    }
+}
+.recipe__info--title {
+    font-size: 2rem;
+    font-family: var(--titles);
+    font-weight: 400;
+}
+.recipe__info--ingredients li {
+margin: 1rem 0;
+}
+
+.recipe__preparation {
+    text-align: justify;
+}
+.recipe__preparation--step {
+    margin: 2rem 0 0 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+
+/* --END--RECIPES-- */
