@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a vinsmake's portfolio web page, it's not a real blog. You can contact me in linkedin.com/vinsmake"> <!-- This is a description of the web page, it's showed in the google search page description -->
+    <link rel="preload" href="https://necolas.github.io/normalize.css/latest/normalize.css" as="stylesheet"> <!-- This make that stylesheet priority when someone acces to the web. -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="preload" href="css/styles.css" as="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Midnight Coffee</title>
 </head>
@@ -36,7 +39,7 @@
         <h2 class="blog--title">Our Blog</h2>
         <a href="#">
             <article class="blog__article">
-                    <img class="blog__article--img" src="images/playlist.jpg" alt="kissaten_coffee_house">
+                    <img loading="lazy" class="blog__article--img" src="images/playlist.jpg" alt="kissaten_coffee_house"> <!-- Loading="lazy" makes that the image only charges when the user gets to that part of the web, making the workload of the server lighter-->
                     <!-- Source: https://perfectdailygrind.com/2015/09/third-wave-coffee-japanese-kissaten-more-similar-than-you-think/ -->
                 <div class="blog__article__info">
                     <h3 class="blog__article__info--title">Japanese Coffee House Playlist</h3>
@@ -47,7 +50,7 @@
         </a>
         <a href="#">
             <article class="blog__article">
-                    <img class="blog__article--img" src="images/viennese.jpg" alt="viennese_coffee_house">
+                    <img loading="lazy" class="blog__article--img" src="images/viennese.jpg" alt="viennese_coffee_house">
                     <!-- Source: https://gettingontravel.com/coffee-house-culture-in-vienna/ -->
                 <div class="blog__article__info">
                     <h3 class="blog__article__info--title">Viennese Coffee House</h3>
@@ -57,7 +60,7 @@
         </a>
         <a href="#">
             <article class="blog__article">
-                    <img class="blog__article--img" src="images/koji.jpg" alt="Koji_fermented_coffee">
+                    <img loading="lazy" class="blog__article--img" src="images/koji.jpg" alt="Koji_fermented_coffee">
                     <!-- Source: https://mtpak.coffee/2021/12/rise-koji-fermented-coffee/ -->
                 <div class="blog__article__info">
                     <h3 class="blog__article__info--title">Koji Fermented Coffee</h3>
