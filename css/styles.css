@@ -503,6 +503,55 @@ margin: 1rem 0;
     font-weight: 400;
 }
 
-
-
 /* --END--RECIPES-- */
+/* --START--CONTACT-- */
+.contact {
+
+}
+/* --END--CONTACT-- */
+.form {
+    width: min(90%, 50rem); /* if 95% of the screen is <80rem, uses it, else, use 80rem */
+    margin: 2rem auto;
+    background-image: url(../images/form.jpg);
+    padding: 1rem;
+    border-radius: 8px;
+    background-size: cover;
+}
+
+.form__field {
+    margin: 1rem 0;
+    width: 100%;
+
+}
+
+.form__field--input {
+    width: 100%;
+    background-color: #b4b4b4;
+    border: solid 2px var(--ashes);
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-top: 6px;
+}
+
+.form__field--input:focus {
+    background-color: var(--light);
+    color: var(--white);
+}
+
+.form__field--textarea {
+    resize: none;
+    height: 10rem;
+}
+
+.form__field--button {
+    background-color: #b4b4b4;
+    color: var(--black);
+    display: flex;
+    margin: 0rem 0rem 0rem auto;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; 
+    border: solid 2px var(--ashes);
+    font-size: 1.5rem;
+}
