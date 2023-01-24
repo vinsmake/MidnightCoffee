@@ -15,6 +15,7 @@ font-family: 'Source Sans Pro', sans-serif; */
     --light: #484848;
     --white: #ffffff;
     --coffee: #7B5F3F;
+    --field: #b4b4b4;
 
     --titles: 'Newsreader', serif;
     --text: 'Source Sans Pro', sans-serif;
@@ -526,7 +527,7 @@ margin: 1rem 0;
 
 .form__field--input {
     width: 100%;
-    background-color: #b4b4b4;
+    background-color: var(--field);
     border: solid 2px var(--ashes);
     border-radius: 8px;
     padding: 0.5rem;
@@ -538,13 +539,30 @@ margin: 1rem 0;
     color: var(--white);
 }
 
+.form__error--msg {
+    color: var(--white);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--light);
+    border: 2px solid var(--white);
+}
+
+.form__success--msg {
+    color: var(--white);
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--light);
+    border: 2px solid var(--white);
+}
+
 .form__field--textarea {
     resize: none;
     height: 10rem;
 }
 
 .form__field--button {
-    background-color: #b4b4b4;
+    background-color: var(--field);
     color: var(--black);
     display: flex;
     margin: 0rem 0rem 0rem auto;
