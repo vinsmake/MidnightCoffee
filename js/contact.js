@@ -40,20 +40,14 @@ contactForm.addEventListener('submit', function(e){ //submit event listener, sub
 
         //if there are inputs without text, then >
         if (ContactName == '' || ContactEmail == '' || ContactMessage == '') {
-            formAlert('Todos los campos son obligatorios, favor de revisar','error'); //this happens if there's no text, the second argument is error
+            formAlert('please fill all the fields','error'); //this happens if there's no text, the second argument is error
             return; //breaks the code excecution if there's no name
         };
         //if all the inpurs have text, then >
         if (ContactName != '' || ContactEmail != '' || ContactMessage != '') {
-            formAlert('Su mensaje ha sido enviado! Pronto nos pondremos en contacto con usted.'); //this happens if every input is filled.
+            formAlert('Your message has been sent! We will contact you shortly.'); //this happens if every input is filled.
             return; //breaks the code excecution if everything's okay
         };
-
-
-
-    //send form
-
-    console.log('Se esta enviando el formulario...');
 })
 
 
